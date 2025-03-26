@@ -1,0 +1,1 @@
+- Jenkins CI/CD pipeline with maven, Docker, trivy for security, Sonarqube and AWS EKS kubernetes cluster.
