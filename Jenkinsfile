@@ -46,10 +46,7 @@ pipeline {
                     // aws configure set aws_secret_access_key ${SECRET_KEY}
                     // aws configure set default.region ${params.Region}
                     aws s3 ls
-                '''
-                aws s3 ls
-    
-              
+            '''    
             }
         }
         stage('Unit Test maven') {
