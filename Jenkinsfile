@@ -34,6 +34,19 @@ pipeline {
             }
            
         }
+        stage('Jenkins user listing aws resources') {
+            steps {
+                sh 'aws --version'
+            }
+        }
+        stage('Jenkins user listing aws resources') {
+            steps {
+                sh '''
+                aws s3 ls
+            '''
+              
+            }
+        }
         stage('Unit Test maven') {
             when {expression { params.action == 'create'}}
             steps{
