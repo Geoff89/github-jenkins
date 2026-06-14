@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myjavaapp-deployment
+  name: sagini-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myjavaapp
+      app: sagini
   template:
     metadata:
       labels:
-        app: myjavaapp
+        app: sagini
     spec:
       containers:
-      - name: myjavaapp
-        image: 496157679619.dkr.ecr.us-east-1.amazonaws.com/vikashashoke:latest
+      - name: sagini
+        image: 622339756908.dkr.ecr.us-east-1.amazonaws.com/sagini:latest
         ports:
         - containerPort: 8080
 
