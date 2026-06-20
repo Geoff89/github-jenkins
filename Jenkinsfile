@@ -5,6 +5,7 @@ pipeline {
 
     tools {
         maven '3.9.0'
+        //jdk 'JDK21'
     }
 
     parameters{
@@ -31,6 +32,7 @@ pipeline {
         stage("Mvn Verification"){
             steps{
                 sh 'mvn --version'
+                sh 'java -version'
             }
            
         }
